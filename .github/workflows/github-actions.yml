@@ -10,3 +10,7 @@ jobs:
         uses: SAP/project-piper-action@master
         with:
           command: help
+      - name: cTMSupload
+        uses: SAP/project-piper-action@master
+        with:
+          command: tmsUpload
