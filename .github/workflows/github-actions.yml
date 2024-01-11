@@ -6,10 +6,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: mavenBuild
+      - name: help
         uses: SAP/project-piper-action@master
         with:
           command: help
+      - name: mavenExecuteStaticCodeChecks
+        uses: SAP/project-piper-action@master
+        with:
+          command: mavenExecuteStaticCodeChecks
+      - name: mavenBuild
+        uses: SAP/project-piper-action@master
+        with:
+          command: mavenBuild
       - name: cTMSupload
         uses: SAP/project-piper-action@master
         with:
