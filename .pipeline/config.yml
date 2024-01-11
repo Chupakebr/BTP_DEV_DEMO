@@ -1,13 +1,9 @@
 steps:
   tmsUpload:
     credentialsId:	yes		
-    customDescription:	no		
     mtaPath:	yes		
     mtaVersion:	no	*	
     nodeExtDescriptorMapping:	no		
-    nodeName:	yes		
+    nodeName:	COE_PPD		
     proxy:	no		
     script:	yes		
-    stashContent:	no	[buildResult]	
-    useGoStep:	no		true, false
-    verbose:	no		true, false
