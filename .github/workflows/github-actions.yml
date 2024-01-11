@@ -10,14 +10,14 @@ jobs:
         uses: SAP/project-piper-action@master
         with:
           command: help
-      - name: mavenExecuteStaticCodeChecks
-        uses: SAP/project-piper-action@master
-        with:
-          command: mavenExecuteStaticCodeChecks
       - name: mavenBuild
         uses: SAP/project-piper-action@master
         with:
           command: mavenBuild
+      - name: mavenExecuteStaticCodeChecks
+        uses: SAP/project-piper-action@master
+        with:
+          command: mavenExecuteStaticCodeChecks
       - name: cTMSupload
         uses: SAP/project-piper-action@master
         with:
