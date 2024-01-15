@@ -7,14 +7,14 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: help
-        uses: SAP/project-piper-action@master
+        uses: project-piper/piper-github-action@main
         with:
           command: help
       - name: Build
-        uses: SAP/project-piper-action@master
+        uses: project-piper/piper-github-action@main
         with:
           command: mtaBuild
       - name: cTMSupload
-        uses: SAP/project-piper-action@master
+        uses: project-piper/piper-github-action@main
         with:
           command: tmsUpload
